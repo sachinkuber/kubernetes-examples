@@ -6,7 +6,7 @@ metadata:
   creationTimestamp: 2018-07-14T06:45:09Z
   generation: 1
   labels:
-    run: load-balancer-example
+    run: edureka-example
   name: hello-world
   namespace: default
   resourceVersion: "4000"
@@ -18,7 +18,7 @@ spec:
   revisionHistoryLimit: 2
   selector:
     matchLabels:
-      run: load-balancer-example
+      run: edureka-example
   strategy:
     rollingUpdate:
       maxSurge: 25%
@@ -28,7 +28,7 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        run: load-balancer-example
+        run: edureka-example
     spec:
       containers:
       - image: gcr.io/google-samples/node-hello:1.0
